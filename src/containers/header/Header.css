@@ -1,0 +1,19 @@
+.appHeader {
+  background-color: #3f4e5a;
+}
+
+.headerContainer {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .headerContainer {
+    height: 130px;
+  }
+}
