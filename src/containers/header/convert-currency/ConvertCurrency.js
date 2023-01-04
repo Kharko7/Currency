@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { useCurrency } from '../../../hooks/get-currency';
+import { useCurrency } from '../../../hooks/use-currency';
 import SelectorAndInput from '../../../components/selector-and-input/SelectorAndInput'
 import './ConvertCurrency.css'
 import { regExp } from '../../../constants/currency';

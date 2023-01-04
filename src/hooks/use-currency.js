@@ -12,7 +12,9 @@ export const useCurrency = () => {
           return currency.cc === 'USD' || currency.cc === 'EUR' || currency.cc === 'GBP'
         })
         setCurrencies([...filterCurrencies, UAH])
-      })
+      }).catch((error) => {
+        console.log(error)
+      });
   }, [])
 
   return currencies
