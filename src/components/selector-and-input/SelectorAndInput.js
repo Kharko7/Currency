@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classNames from 'classnames/bind';
 
 import styles from './SelectorAndInput.css'
@@ -16,6 +16,10 @@ const Selector = ({ data, inputValue, selectorValue, disabled, onChangeSelector,
     handleOpenDropdown(false)
     onChangeSelector(currency);
   }
+
+  useEffect(() => {
+    console.log('hello')
+  }, [])
 
   return (
     <div className={cn('dropdown')}>
