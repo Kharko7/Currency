@@ -20,6 +20,10 @@ const Selector = ({ data, inputValue, selectorValue, disabled, onChangeSelector,
   useEffect(() => {
     console.log('hello')
   }, [])
+  
+  const aa = useMemo(() => {
+    return 'aaa'
+  }, [])
 
   return (
     <div className={cn('dropdown')}>
